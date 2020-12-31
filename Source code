@@ -1,0 +1,61 @@
+// include the library code:
+
+#include <LiquidCrystal.h> //
+
+//intialize the library with the numbers interface pins
+
+LiquidCrystal lcd (12, 11, 5, 4, 3, 2);
+
+ 
+
+void setup() {
+
+  // put your setup code here, to run once:
+
+lcd.begin(16,2);  //
+
+ 
+
+}
+
+ 
+
+void loop() {
+
+  // display pertama
+
+lcd.clear ();
+
+lcd.setCursor (0,0);
+
+lcd.print("Yabuki Nako");
+
+lcd.setCursor(0,1);
+
+lcd.print ("HKT48");
+
+lcd.setCursor(6,1);
+
+lcd.print("IZ*ONE");
+
+delay(5000);
+
+ 
+
+// display kedua
+
+lcd.clear();
+
+lcd.setCursor(0,0);
+
+lcd.write("Kim Chaewon");
+
+lcd.setCursor(0,1);
+
+lcd.setCursor(6,1);
+
+lcd.write("IZ*ONE");
+
+delay(5000);
+
+}
